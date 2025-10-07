@@ -180,7 +180,7 @@ def save_yolo_label_file(label_path: str, boxes: List[Dict[str, Any]], img_w: in
 # --------- Routes ---------
 @app.route("/")
 def root():
-    # serve static/index.html from your static folder (assuming you placed index.html into static/)
+    # serve static/index.html from your static folder
     return send_from_directory(app.static_folder, "index.html")
 
 @app.get("/api/classes")
